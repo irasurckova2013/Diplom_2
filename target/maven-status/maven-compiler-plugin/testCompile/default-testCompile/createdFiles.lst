@@ -1,0 +1,9 @@
+order_tests\OrderSteps.class
+order_tests\CreateOrderTests.class
+user_tests\LoginUserTests.class
+order_tests\GetOrdersTests.class
+user_tests\CreateUserTests.class
+user_tests\UserSteps.class
+user_tests\ChangeUserDataTests.class
+order_tests\OrderTestData.class
+user_tests\UserTestData.class
