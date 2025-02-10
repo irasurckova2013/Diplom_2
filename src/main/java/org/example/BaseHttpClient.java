@@ -61,9 +61,10 @@ public abstract class BaseHttpClient {
 
     }
 
-    protected Response doDeleteRequest(String path, Object object) {
+    protected Response doDeleteRequest(String path, String token) {
         return given()
                 .spec(baseRequestSpec)
+                .header("Authorization", token)
                 .delete(path)
                 .thenReturn();
     }

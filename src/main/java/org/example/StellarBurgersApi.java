@@ -40,8 +40,8 @@ public class StellarBurgersApi extends BaseHttpClient{
         return doPatchUpdateUserInfo(pathUpdateUserInfo, object, token);
     }
 
-    public Response doDeleteUser(Object object){
-        return doDeleteRequest(pathDeleteUser, object);
+    public Response doDeleteUser(String token){
+        return doDeleteRequest(pathDeleteUser, token);
     }
 
 }

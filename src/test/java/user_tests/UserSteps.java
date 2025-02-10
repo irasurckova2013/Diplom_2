@@ -55,8 +55,8 @@ public class UserSteps {
     public void deleteUserIfExist() {
         if(!checkingThatNoUser()) {
             Response postLogin = createUser();
-            String accessToken = postLogin.jsonPath().getString("accessToken");
-            stellarBurgersApi.doDeleteUser(accessToken);
+            String token = postLogin.jsonPath().getString("accessToken");
+            stellarBurgersApi.doDeleteUser(token);
         }
 
     }
