@@ -20,16 +20,16 @@ public class ChangeUserDataTests {
         @Test
         @Description("Тест на изменение данных пользователя с авторизацией")
         @Severity(SeverityLevel.BLOCKER)
-        public void UpdateUserDataWithAuthorization() {
+        public void updateUserDataWithAuthorization() {
             String token = userSteps.loginUser().jsonPath().getString("accessToken");
             userSteps.getUserData(token);
             userSteps.patchUpdateUserData(token).then().statusCode(200);
         }
 
-       @Test
+        @Test
         @Description("Тест на изменение данных пользователя без авторизации")
         @Severity(SeverityLevel.BLOCKER)
-        public void UpdateUserDataWithoutAuthorization() {
+        public void updateUserDataWithoutAuthorization() {
             userSteps.patchUpdateUserData(" ").then().statusCode(401);
         }
 
