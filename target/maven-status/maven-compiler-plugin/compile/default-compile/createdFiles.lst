@@ -1,0 +1,4 @@
+org\example\Order.class
+org\example\BaseHttpClient.class
+org\example\StellarBurgersApi.class
+org\example\User.class

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: user_tests.ChangeUserDataTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.477 s <<< FAILURE! - in user_tests.ChangeUserDataTests
+UpdateUserDataWithAuthorization(user_tests.ChangeUserDataTests)  Time elapsed: 1.043 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at user_tests.ChangeUserDataTests.UpdateUserDataWithAuthorization(ChangeUserDataTests.java:26)
+
